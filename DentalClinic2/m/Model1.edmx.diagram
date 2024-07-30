@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="06c6919f686c49568f22d1a13a581dd3" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="3.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_Appointment" Width="2.125" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_ClinicDateTable" Width="1.5" PointX="1.5" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_DentistType" Width="1.5" PointX="1.5" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_desntistsWorkTime" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_doctors" Width="1.5" PointX="1.5" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_Entrance" Width="1.5" PointX="8.625" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_Patients" Width="1.5" PointX="0.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_RoleType" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_Sections" Width="1.5" PointX="1.5" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_Services" Width="1.5" PointX="0.75" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBL_Users" Width="1.5" PointX="10.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Vw_DentistsWorkTime" Width="1.5" PointX="9.75" PointY="9.375" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_TBL_Appointment_TBL_desntistsWorkTime" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBL_Appointment_TBL_Patients" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBL_Appointment_TBL_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBL_desntistsWorkTime_TBL_ClinicDateTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBL_doctors_TBL_DentistType" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBL_desntistsWorkTime_TBL_doctors" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBL_Entrance_TBL_RoleType" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBL_Entrance_TBL_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBL_Services_TBL_Sections" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBL_Appointment_TBL_Entrance" />
+        <EntityTypeShape EntityType="Model.TBL_Images" Width="1.5" PointX="3" PointY="24.375" />
+        <AssociationConnector Association="Model.FK_TBL_Images_TBL_Patients" />
+        <EntityTypeShape EntityType="Model.DoctorWorkTimeVW" Width="2.625" PointX="12.375" PointY="1.375" />
+        <EntityTypeShape EntityType="Model.AppointmentVW" Width="1.5" PointX="1.375" PointY="1" />
+        <EntityTypeShape EntityType="Model.FinancialVW1" Width="1.5" PointX="0.75" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
